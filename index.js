@@ -24,6 +24,15 @@ exports.handler = function(event, context, callback) {
             if (typeof call.block.previous === "undefined") {
                 call['block']['previous'] = 'undefined';
             }
+            if (typeof call.block.representative === "undefined") {
+                call['block']['representative'] = 'undefined';
+            }
+            if (typeof call.block.link === "undefined") {
+                call['block']['link'] = 'undefined';
+            }
+            if (typeof call.block.link_as_account === "undefined") {
+                call['block']['link_as_account'] = 'undefined';
+            }
             var block_params = {
                 Item: {
                     "hash": {
